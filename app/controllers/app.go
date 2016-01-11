@@ -1,11 +1,21 @@
 package controllers
 
-import "github.com/revel/revel"
+import (
+	"fmt"
+	"github.com/revel/revel"
+	"github.com/myaccount/my-app/app/models"
+)
 
 type App struct {
-	*revel.Controller
+	GormController
 }
 
 func (c App) Index() revel.Result {
+	fmt.Println(c.Txn)
+
+	users := []models.User{}
+	c.Txn.Find(&users)
+	fmt.Println(users)
+
 	return c.Render()
 }

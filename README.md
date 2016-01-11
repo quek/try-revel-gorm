@@ -1,3 +1,9 @@
+# DB
+
+http://stackoverflow.com/questions/25142372/how-to-access-gorm-in-revel-controller
+https://github.com/Gr1N/revel-gorm
+
+
 # Welcome to Revel
 
 ## Getting Started
