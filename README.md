@@ -1,7 +1,11 @@
 # DB
 
-http://stackoverflow.com/questions/25142372/how-to-access-gorm-in-revel-controller
-https://github.com/Gr1N/revel-gorm
+* http://stackoverflow.com/questions/25142372/how-to-access-gorm-in-revel-controller
+* https://github.com/Gr1N/revel-gorm
+
+```
+mysql> create database gogo character set utf8mb4;
+```
 
 
 # Welcome to Revel
