@@ -3,7 +3,6 @@ package app
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/revel/revel"
-	_ "github.com/go-sql-driver/mysql"
 )
 
 var (
