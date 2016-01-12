@@ -15,7 +15,10 @@ func (c App) Index() revel.Result {
 
 	users := []models.User{}
 	c.Txn.Find(&users)
-	fmt.Println(users)
+	if len(users) == 0 {
+		user := models.User{Name: "ずむ"}
+		c.Txn.Create(&user)
+	}
 
-	return c.Render()
+	return c.Render(users)
 }

@@ -18,6 +18,19 @@
       {{template "flash.html" .}}
     </div>
   </div>
+  <div class="row">
+    <div class="span12">
+      <ul>
+        {{range .users}}
+        <li>
+          {{.ID}} {{.Name}}
+          {{.CreatedAt.Format "2006/01/02 15:04:05"}}
+          {{.UpdatedAt.Format "2006-01-02 15:04:05"}}
+        </li>
+        {{end}}
+      </ul>
+    </div>
+  </div>
 </div>
 
 {{template "footer.html" .}}

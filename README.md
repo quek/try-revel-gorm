@@ -7,6 +7,12 @@
 mysql> create database gogo character set utf8mb4;
 ```
 
+# run
+
+```
+revel run github.com/myaccount/my-app
+```
+
 
 # Welcome to Revel
 
